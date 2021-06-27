@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+  <title>pizzeria</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navbar">
+        <ul class="main-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#varieties">Varieties</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#contactus">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header-conent">
+      <h1>Welcome to <span class="animation">pizzeria cafe</span>.<br>
+        Best pizza Shop in town!
+      </h1>
+      <a href="#order-form" class="btn btn-order" id="button">Click to order</a>
+      <a href="#aboutus" class="btn btn-order" id="button2">Show more</a>
+    </div>
+  </header>
+
+  <!--about us section-->
+  <div class="aboutus section" id="aboutus">
+    <div class="about">
+      <h1>About Us</h1>
+    </div>
+    <div id="textp">
+      <p>Pizzeria pizza cafe Restaurants that has been in pizza business for over 10years now and offers a very unique
+        atmosphere for customers</p>
+      <p>In addition to home delivery services for all pizza orders and we know that pizza is a family meal which
+        popular around the world .</p>
+      <P>Pizzeria pizza offers affordable prices for pizzas and its where you feel at home.Pizzeria pizza never
+        disappoints.</P>
+    </div>
+  </div>
+  </section>
+
+
+
+  <!--varieties section-->
+  <div class="container varieties-section" id="varieties">
+    <h2 class="title">Varieties</h2>
+    <div class="row">
+      <div class="col-mb-4">
+        <div class="card mb-2">
+          <img class="image1" src="./images/alfredo.jpeg" alt="alfredo">
+          <div class="card-body">
+            <h3 class="card-title">Chicken Alfredo Pizza</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-mb-4">
+        <div class="card mb-2" id="card1">
+          <img class="image2" src="./images/bufallo.jpeg" alt="buffalo">
+          <div class="card-body">
+            <h3 class="card-title">Buffalo Chicken Sticks</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-mb-4">
+        <div class="card mb-2" id="card2">
+          <img class="image3" src="./images/periperi.jpeg" alt="periperi">
+          <div class="card-body">
+            <h3 class="card-title">Periperi Pizza</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-mb-4">
+          <div class="card mb-2" id="card3">
+            <img class="image4" src="./images/rasp.jpeg" alt="rasp">
+            <div class="card-body">
+              <h3 class="card-title">Raspberry Dessert Pizza</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-mb-4">
+          <div class="card mb-2" id="card4">
+            <img class="image5" src="./images/tikka.jpeg" alt="tikka">
+            <div class="card-body">
+              <h3 class="card-title">Chicken Tikka</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-mb-4">
+          <div class="card mb-2" id="card5">
+            <img class="image6" src="./images/trm.jpg" alt="trm">
+            <div class="card-body">
+              <h3 class="card-title">Sunchoke Pizza</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="order-section" id="order-pizza">
+          <div class="order-overlay" id="Ordernow">
+            <div class="text-order" id="order-now">
+              <h2 id="form-heading">Do not be left behind! Order your pizza here and it will be delievered at your door step!</h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-5">
+                <form id="order-form">
+                  <label for="select">Select Your desired Flavor</label>
+                  <select class="pizzaLabel" id="Flavor" required>
+                    <option value="buffalo Chicken">Buffalo Chicken Sticks</option>
+                    <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                    <option value="Chicken alfredo Pizza">Chicken Alfredo Pizza</option>
+                    <option value="Raspberry Pizza">Raspberry Dessert Pizza</option>
+                    <option value="periperi Pizza">Periperi Pizza</option>
+                    <option value="Tikka Pizza">Chicken Tikka</option>
+                  </select>
+                  <label for="select">Select Size</label>
+                  <select class="pizza-size" id="size" required>
+                    <option selected value="0">Select size here</option>
+                    <option value="large">Large</option>
+                    <option value="medium">Medium</option>
+                    <option value="small">Small</option>
+                  </select><br>
+                  <label for="crust">Choose your favorite Crust!</label>
+                  <select class="pizzza-crust" id="crust" required>
+                    <option selected value="0">Select your preferred crust!</option>
+                    <option value="Crispy">Crispy</option>
+                    <option value="Stuffed">Stuffed</option>
+                    <option value="Gluten-free">Gluten-free</option>
+                  </select><br>
+                  <label for="Toppings">Select Your Toppings</label>
+                  <select class="pizza-topping" id="toppings" required>
+                    <option value="tomato">Tomatoes --sh.20</option>
+                    <option value="pepper">Green pepper -- sh.50</option>
+                    <option value="mushroom">Mushroom -- sh.70</option>
+                  </select><br>
+                  <button type="submit" class="btn btn-orange proceed" id="button3">Order</button>
+                </form>
+              </div>
+              <div class="col-sm-7" id="orderClass">
+               
+                <div class="orderCalculation">
+                  <h2>Your Order is:</h2>
+                  <div id="your-orders">
+                    <table class="table table-sm  pizzaTable">
+                      <thead>
+                        <tr>
+                          
+                          
+                          <th scope="col">Flavor</th>
+                          <th scope="col">Size</th>
+                          <th scope="col">Crust</th>
+                          <th scope="col">Topping</th>
+                          <th scope="col">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="ordersTaken">
+                        
+                      </tbody>
+                    </table>
+                    <p class="deliveryCost hidden">
+                      Delivery Cost: Ksh. <span id="delivery-cost"></span>
+                  </p>
+                  <p class="TotalAmount hidden">
+                      Total Amount: Ksh. <span id="totalAmount"></span>
+                  </p>
+                  <br /><br />
+                    <button class="btn btn-orange" id="Checkout">Checkout</button>
+                    <div class="checkout-info hidden">
+                      <h3 id="check">Check form</h3>
+                      <form action="" id="checkoutForm">
+      <div class="form-group">
+      <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+      <label for="delivery">Desired Delivery Option</label>
+      <select class="form-control" id="OptionDelivery" required>
+        <option value="deliver">Home Delivery?</option>
+        <option value="collect">Pick Up</option>
+    </select>
+      </div>
+      <button type="submit" class="btn btn-orange" id="final-option">Deliver</button>
+      </form>
+    </div>
+    <div class="deliveryLocation hidden">
+      <form id="locationForm">
+          <h3>Enter your location</h3>
+          <div class="form-group">
+              <label>Estate</label>
+              <input type="text" class="form-control" id="estate" placeholder="Enter Your Name"
+                  required />
+          </div>
+          <div class="form-group">
+              <label for="exampleFormControlSelect1">House Number</label>
+              <input type="text" class="form-control" id="houseNumber" placeholder="Enter Your Name"
+                  required />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+  </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="contact-section" id="contactus">
+          <div class="contact-us">
+            <div class="row" id="contactDetails">
+              <div class="col-md-3">
+                <h2>Customer Care</h2>
+                <p>praiselaurine10@gmail.com</p>
+                <p>Tell: 02200346476</p>
+                <p>Phone Number: +254700611601</p>
+                <p>pizzeriaCafe@gmail.com</p>
+              </div>
+              <div class="col-md-3 text-justify">
+                <h2>Location</h2>
+                <p>Pizzeria Cafe</p>
+                <p>RidgeWay mall | Kiambu road</p>
+              </div>
+              <div class="col-md-3 text-justify">
+                <img src=".//images/RIDGEWAYS-MAP.jpg" width="130%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</body>
+
+</html>
