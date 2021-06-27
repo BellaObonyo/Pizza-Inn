@@ -1,0 +1,270 @@
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+}
+header{
+    background-image:  url("../images/pizaa-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Flamenco', cursive;
+  
+}
+
+
+.navbar{
+    margin: 0 auto;
+    max-width: 1180px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    list-style: none;
+    
+}
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+    padding: 5px 0;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+.header-conent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-conent h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Flamenco', cursive;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+    text-transform: uppercase;
+}
+#button{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+    border-radius: 200px;
+    font-family: 'Flamenco', cursive;
+}
+#button2{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 200px;
+    font-family: 'Flamenco', cursive;
+}
+#button:hover{
+    background-color: #fff;
+}
+#button2:hover{
+    background-color: #bf55ec;
+}
+.animation{
+    animation: animationpizzeria 1s infinite;
+}
+@keyframes animationpizzeria{
+    0%{color: red;}
+    25%{color: #bf55ec;}
+    50%{color: #fff;}
+    100%{color: #bf55ec;}
+}
+.col-md-4{
+    border-radius: 10%;
+    padding: 10px;
+  }
+.image6{
+    height: 200px;
+    width: 300px;
+}
+
+ img{
+    padding: 10px;
+}
+.card{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+#card2{
+    width: 100%;
+}
+#card3{
+    width: 88%;
+    margin-top: 26px;
+    left: 11px;
+    height: -900px;
+}
+#card4{
+    width: 102%;
+    right: 15px;
+}
+#card5{
+    right: -12px;
+    width: 100%;
+}
+
+
+.title{
+    font-family: 'Gabriela', serif;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    letter-spacing: 3px;
+    color: #000;
+    text-transform: uppercase;
+}
+.card-title{
+    text-align: center;
+    color: #bf55ec;
+    font-weight: 800;
+    font-family: 'Delius Swash Caps', cursive;
+}
+#aboutus{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    font-family: 'Copse', serif;
+    font-size: 20px;
+}
+.about h1{
+    font-family: 'Gabriela', serif;
+    text-transform: uppercase;
+}
+
+
+
+#order-now h2{
+    
+     padding-top: 40px;
+     padding-bottom: 20px;
+     font-weight: bolder;
+} 
+
+option{
+    width: 100%;
+    align-items: center;
+}
+.row{
+    align-items: center;
+}
+#crust, #size, #Flavor, #toppings{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#button3{
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10PX;
+}
+#order-now h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#contactus{
+color: #000;
+ text-align: center; 
+background-color: rgb(72, 255, 0);
+margin-top: 30px;
+height: 100%;
+width: 100%;
+font-weight: bolder;
+}
+#order-form{
+    top: 10px;
+    
+}
+#order-pizza{
+    background-image: url("../images/pizaa-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    color:#fff;
+    align-items: center;
+    overflow: hidden;
+    
+}
+#Ordernow{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 50px;
+    border-radius: 5px;
+}
+#final-option{
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10PX;
+
+}
+#Checkout{
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10PX;
+
+
+}
+.hidden{
+    display: none;
+} 
+.pizzaTable{
+  color: #fff;
+  border: 1px solid black;
+}
+th, td, th{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
