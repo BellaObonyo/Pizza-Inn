@@ -5,7 +5,7 @@ This a web application  that allows users to order pizza.
 - After my repository's name, Select Clone/download.
 - Open terminal command
 - Select Where you want to clone the project. eg desktop
-- git clone https://github.com/costamay/PizzaIt.git
+- git clone https://obonyocynthia.github.io/Pizza-Inn/
 - Click Enter. And your clone will be created.
 - cd Delani-studio to navigate through the project directory
 - code . or atom . depending on the text editor you are using
@@ -15,7 +15,7 @@ This a web application  that allows users to order pizza.
 * Bootstrap
 * Javascript and JQuery
 # Contact Details
-If you have any request or questions please email me at praiselaurine10@gmail.com
+If you have any request or questions please email me at cynthiabella.obonyo@gmail.com
 # License & Copyright
 Copyright (c) 2021 Obonyo Cynthia
 
