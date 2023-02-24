@@ -22,6 +22,7 @@ header{
 .main-nav{
     float: right;
     margin-top: 60px;
+    
 
 }
 .main-nav li{
@@ -39,7 +40,8 @@ header{
     padding: 5px 0;
 }
 .main-nav li a:hover{
-    border-bottom: 2px solid #bf55ec;
+    border-bottom: 2px solid #d73e02;
+    color:#bf55ec;
 }
 .header-conent{
     position: absolute;
@@ -84,16 +86,16 @@ header{
     background-color: #fff;
 }
 #button2:hover{
-    background-color: #bf55ec;
+    background-color: #d73e02;
 }
 .animation{
     animation: animationpizzeria 1s infinite;
 }
 @keyframes animationpizzeria{
-    0%{color: red;}
-    25%{color: #bf55ec;}
+    0%{color: #d73e02}
+    25%{color: #d73e02;}
     50%{color: #fff;}
-    100%{color: #bf55ec;}
+    100%{color: #d73e02}
 }
 .col-md-4{
     border-radius: 10%;
@@ -192,10 +194,7 @@ option{
     font-size: 20px;
 }
 #contactus{
-color: #000;
- text-align: center; 
-background-color: rgb(72, 255, 0);
-margin-top: 30px;
+text-align: center; 
 height: 100%;
 width: 100%;
 font-weight: bolder;
@@ -209,18 +208,17 @@ font-weight: bolder;
     background-repeat: no-repeat;
     background-size: cover;
     height: 120vh;
-    color:#fff;
+    color: #d73e02;
     align-items: center;
     overflow: hidden;
     
 }
 #Ordernow{
-    background: rgba(0, 0, 0, 0.7);
     padding: 40px 50px;
     border-radius: 5px;
 }
 #final-option{
-    background-color: blue;
+    background-color: #5FFBF1;
     color: #fff;
     text-align: center;
     border-radius: 10px;
@@ -228,7 +226,7 @@ font-weight: bolder;
 
 }
 #Checkout{
-    background-color: blue;
+    background-color: #5FFBF1;
     color: #fff;
     text-align: center;
     border-radius: 10px;
