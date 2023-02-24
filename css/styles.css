@@ -1,268 +1,273 @@
-*{
-    
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    font-size: 20px;
+body {
+  font-size: 20px;
 }
-header{
-    background-image:  url("../Images/pizaa-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    font-family: 'Flamenco', cursive;
-  
+header {
+  background-image: url("../Images/pizaa-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Flamenco", cursive;
+}
+
+.navbar {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+.main-nav {
+  float: right;
+  margin-top: 60px;
+}
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  list-style: none;
+}
+.main-nav li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 100;
+  padding: 5px 0;
+}
+.main-nav li a:hover {
+  border-bottom: 2px solid #d73e02;
+  color: #bf55ec;
+}
+.header-conent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-conent h1 {
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Flamenco", cursive;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1200px; /* adjust this value as needed */
 }
 
 
-.navbar{
-    margin: 0 auto;
-    max-width: 1180px;
-}
-.main-nav{
-    float: right;
-    margin-top: 60px;
-    
-
-}
-.main-nav li{
-    display: inline-block;
-    margin-left: 40px;
-    list-style: none;
-    
-}
-.main-nav li a{
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    font-weight: 100;
-    padding: 5px 0;
-}
-.main-nav li a:hover{
-    border-bottom: 2px solid #d73e02;
-    color:#bf55ec;
-}
-.header-conent{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.header-conent h1{
-    color: #fff;
-    font-size: 240%;
-    word-spacing: 5px;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-family: 'Flamenco', cursive;
-}
-.btn{
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: bolder;
-    text-decoration: none;
-    border-radius: 200px;
-    transition: background-color 0.2s, border 0.2s, color 0.2;
-    text-transform: uppercase;
-}
-#button{
-    background-color: transparent;
-    color: #bf55ec;
-    margin-right: 15px;
-    border: 1px solid #bf55ec;
-    border-radius: 200px;
-    font-family: 'Flamenco', cursive;
-}
-#button2{
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 200px;
-    font-family: 'Flamenco', cursive;
-}
-#button:hover{
-    background-color: #fff;
-}
-#button2:hover{
-    background-color: #d73e02;
-}
-.animation{
-    animation: animationpizzeria 1s infinite;
-}
-@keyframes animationpizzeria{
-    0%{color: #d73e02}
-    25%{color: #d73e02;}
-    50%{color: #fff;}
-    100%{color: #d73e02}
-}
-.col-md-4{
-    border-radius: 10%;
-    padding: 10px;
-  }
-.image6{
-    height: 200px;
-    width: 300px;
+.picture {
+    margin: 10px;
+    flex-basis: calc(25% - 20px); /* 25% of the width minus margins */
+    transition: transform 0.2s ease-in-out; /* add transition effect */
 }
 
- img{
-    padding: 10px;
-}
-.card{
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-} 
-#card2{
-    width: 100%;
-}
-#card3{
-    width: 88%;
-    margin-top: 26px;
-    left: 11px;
-    height: -900px;
-}
-#card4{
-    width: 102%;
-    right: 15px;
-}
-#card5{
-    right: -12px;
-    width: 100%;
+.picture:hover {
+  transform: scale(1.1); /* zoom in on hover */
 }
 
-
-.title{
-    font-family: 'Gabriela', serif;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    letter-spacing: 3px;
-    color: #000;
-    text-transform: uppercase;
-}
-.card-title{
-    text-align: center;
-    color: #bf55ec;
-    font-weight: 800;
-    font-family: 'Delius Swash Caps', cursive;
-}
-#aboutus{
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 5px;
-    font-family: 'Copse', serif;
-    font-size: 20px;
-}
-.about h1{
-    font-family: 'Gabriela', serif;
-    text-transform: uppercase;
+.picture:not(:hover) {
+  transform: scale(1); /* reset scale when not hovered */
 }
 
+.name {
+  text-align: center;
+}
 
-
-#order-now h2{
-    
-     padding-top: 40px;
-     padding-bottom: 20px;
-     font-weight: bolder;
-} 
-
-option{
-    width: 100%;
-    align-items: center;
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: bolder;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2;
+  text-transform: uppercase;
 }
-.row{
-    align-items: center;
+#button {
+  background-color: transparent;
+  color: #bf55ec;
+  margin-right: 15px;
+  border: 1px solid #bf55ec;
+  border-radius: 200px;
+  font-family: "Flamenco", cursive;
 }
-#crust, #size, #Flavor, #toppings{
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#button2 {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 200px;
+  font-family: "Flamenco", cursive;
 }
-#button3{
-    background-color: blue;
-    color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 10PX;
+#button:hover {
+  background-color: #fff;
 }
-#order-now h2{
-    text-align: center;
-    font-weight: bolder;
-    font-size: 20px;
+#button2:hover {
+  background-color: #d73e02;
 }
-#contactus{
-text-align: center; 
-height: 100%;
-width: 100%;
-font-weight: bolder;
+.animation {
+  animation: animationpizzeria 1s infinite;
 }
-#order-form{
-    top: 10px;
-    
-}
-#order-pizza{
-    background-image: url("../Images/pizaa-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 120vh;
+@keyframes animationpizzeria {
+  0% {
     color: #d73e02;
-    align-items: center;
-    overflow: hidden;
-    
-}
-#Ordernow{
-    padding: 40px 50px;
-    border-radius: 5px;
-}
-#final-option{
-    background-color: #5FFBF1;
+  }
+  25% {
+    color: #d73e02;
+  }
+  50% {
     color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 10PX;
-
+  }
+  100% {
+    color: #d73e02;
+  }
 }
-#Checkout{
-    background-color: #5FFBF1;
-    color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 10PX;
-
-
+.col-md-4 {
+  border-radius: 10%;
+  padding: 10px;
 }
-.hidden{
-    display: none;
-} 
-.pizzaTable{
+.image6 {
+  height: 200px;
+  width: 300px;
+}
+
+img {
+  padding: 10px;
+}
+.card {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#card2 {
+  width: 100%;
+}
+#card3 {
+  width: 88%;
+  margin-top: 26px;
+  left: 11px;
+  height: -900px;
+}
+#card4 {
+  width: 102%;
+  right: 15px;
+}
+#card5 {
+  right: -12px;
+  width: 100%;
+}
+
+.title {
+  font-family: "Gabriela", serif;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  letter-spacing: 3px;
+  color: #000;
+  text-transform: uppercase;
+}
+.card-title {
+  text-align: center;
+  color: #bf55ec;
+  font-weight: 800;
+  font-family: "Delius Swash Caps", cursive;
+}
+#aboutus {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 5px;
+  font-family: "Copse", serif;
+  font-size: 20px;
+}
+.about h1 {
+  font-family: "Gabriela", serif;
+  text-transform: uppercase;
+}
+
+#order-now h2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+
+option {
+  width: 100%;
+  align-items: center;
+}
+.row {
+  align-items: center;
+}
+#crust,
+#size,
+#Flavor,
+#toppings {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#button3 {
+  background-color: blue;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+#order-now h2 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+#contactus {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  font-weight: bolder;
+}
+#order-form {
+  top: 10px;
+}
+#order-pizza {
+  background-image: url("../Images/pizaa-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+  color: #d73e02;
+  align-items: center;
+  overflow: hidden;
+}
+#Ordernow {
+  padding: 40px 50px;
+  border-radius: 5px;
+}
+#final-option {
+  background-color: #5ffbf1;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+#Checkout {
+  background-color: #5ffbf1;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.hidden {
+  display: none;
+}
+.pizzaTable {
   color: #fff;
   border: 1px solid black;
 }
-th, td, th{
-    color: #fff;
+th,
+td,
+th {
+  color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
